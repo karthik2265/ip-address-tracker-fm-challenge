@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+:root {
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+}
 
+html {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#__next {
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 1fr;
+}
+
+input {
+  font-family: inherit;
+}
+
+.leaflet-container {
+  position: relative;
+  z-index: 0;
+  grid-template-columns: 1 / 2;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: var(--Dark-Gray);
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--Dark-Gray);
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--Dark-Gray);
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: var(--Dark-Gray);
+}

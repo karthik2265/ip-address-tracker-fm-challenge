@@ -1,0 +1,89 @@
+.main {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-image: url('../public/images/pattern-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.main > * {
+  margin-top: 45px;
+}
+
+.main > h1 {
+  color: white;
+  font-weight: 500;
+}
+
+.input-control {
+  display: flex;
+  width: 35vw;
+}
+
+.input-control > input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--Very-Dark-Gray);
+  cursor: pointer;
+}
+
+.submit-button {
+  cursor: pointer;
+  width: 55px;
+  background-color: var(--Very-Dark-Gray);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url('../public/images/icon-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.output-box {
+  display: flex;
+  width: 90%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  top: 50%;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.output-card {
+  text-align: left;
+  flex: 1;
+  overflow: hidden;
+  border-right: 3px solid var(--Dark-Gray);
+  padding: 0 1rem;
+  /* border: 1px solid red; */
+}
+
+.output-card:nth-child(2) .output-info > * {
+  display: block;
+}
+
+.output-card:last-child {
+  border-right: none;
+}
+
+.output-header {
+  color: var(--Dark-Gray);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.output-info {
+  font-size: 1.7rem;
+  color: var(--Very-Dark-Gray);
+}
