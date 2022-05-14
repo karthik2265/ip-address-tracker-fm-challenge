@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./IP-Address-Tracker.png)
+![](./IP-Adress-Tracker.png)
 
 ### Links
 
